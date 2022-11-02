@@ -2,21 +2,12 @@ const Header = () => {
 
     return (
         <header>
-            <nav class="navbar navbar-expand-lg bg-success">
-            <div class="container-fluid">
-                <a class="navbar-brand bg-succ fs-1" href="#">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link active fs-2" aria-current="page" href="#">About</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
+            <nav class="navbar bg-light">
+                <form class="container-fluid justify-content-start">
+                    <button class="btn btn-outline-success me-2" type="button">Home</button>
+                    <button class="btn btn-sm btn-outline-secondary" type="button">About</button>
+                </form>
+                </nav>
         </header>
     )
         

@@ -10,19 +10,25 @@ function App() {
     <div className="App">
      <Header />
      <section>
-     <div className="card" styles={{}}>
+      <div className="row fluid">
+        <div className="col-lg-6 col12">
+        <div className="card" styles={{}}>
         <div className="card-body">
           <h5 className="card-title fs-1">{number}</h5>
           <p className="card-text">valor de number</p>
         </div>
+        <div className="mt-4 bg-warning">
+        <button onClick={() => setNumber(number + 1)} className="btn btn-success m-4">Incrementar</button>
+        <button onClick={() => setNumber(number - 1)} className="btn btn-success">Decrementar</button>
+        </div>
+      </div>
+        </div>
+        <div className="col-lg-6 col12">
+        <Goku/>
+        </div>
       </div>
      </section>
-
-     <Goku/>
-     <div className="mt-4 bg-warning">
-     <button onClick={() => setNumber(number + 1)} className="btn btn-success m-4">Incrementar</button>
-     <button onClick={() => setNumber(number - 1)} className="btn btn-success">Decrementar</button>
-     </div>
+     
      <Footer />
    </div>
 
