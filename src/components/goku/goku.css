@@ -1,0 +1,55 @@
+.container {
+  width: 644px;
+  height: 532px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.nube {
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/230/367/778/dragon-ball-path-sky-clouds-wallpaper-preview.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: top;
+  background-size: 180%;
+  animation-name: fondo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+.goku {
+  background-image: url("https://i.pinimg.com/originals/4a/ee/a6/4aeea6d29d772cc98ae08cce2bad8ef7.png");
+  width: 100%;
+  height: 100%;
+  background-position: 216px 131px;
+  background-size: 6%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation-name: volar;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fondo {
+  0% {
+    background-size: 180%;
+  }
+  100% {
+    background-size: 260%;
+  }
+}
+@keyframes volar {
+  0% {
+    background-size: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    background-position: 0% 0%;
+    background-size: 108%;
+    opacity: 1;
+  }
+}
